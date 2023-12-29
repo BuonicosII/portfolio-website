@@ -77,35 +77,38 @@ nav div {
 }
 
 header {
-	height: 40vh;
 	position: relative;
 	display: flex;
 	justify-content: center;
 }
 
+.tiltedDivHolder {
+	overflow: hidden;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	z-index: -1;
+}
+
 .tiltedDiv {
     background-color: rgb(121, 121, 245);
-	height: 200%;
-	width: 300%;
+	height: 100%;
+	width: 125%;
 	position: absolute;
-	top: -50%;
+	top: -20%;
 	transform: rotate(-5deg);
 	transform-origin: bottom left;
-	z-index: -1;
 
 }
 
 .aboutDiv {
-	position: absolute;
-	top: 10vh;
 	display: flex;
 	align-items: center;
 	align-content: center;
 	justify-content: center;
-	left: center;
 	max-width: 50vw;
 	max-height: 35vw;
-	flex-wrap: wrap;
+	padding-top: 5vw;
 }
 
 .about {
@@ -119,4 +122,38 @@ header {
 .aboutDiv img {
 	width: 40%;
 	height: auto;
+}
+
+@media (max-width: 1150px) {
+
+	.aboutDiv {
+		flex-wrap: wrap;
+		max-height: none;
+		top: 5vh;
+	}
+
+	.about {
+		width: 75%;
+	}
+
+	.aboutDiv img {
+		width: 75%;
+	}
+}
+
+@media (max-width: 650px) {
+	.aboutDiv {
+		flex-wrap: wrap;
+		max-height: none;
+		top: 5vh;
+		max-width: 60vw;
+	}
+
+	.about {
+		width: 100%;
+	}
+
+	.aboutDiv img {
+		width: 100%;
+	}
 }

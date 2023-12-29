@@ -15,9 +15,14 @@
         </div>
     </nav>
     <header>
-        <div class="tiltedDiv"></div>
+        <div class="tiltedDivHolder">
+            <div class="tiltedDiv"></div>
+        </div>
         <div class="aboutDiv">
-            <img src="../assets/dummy-portrait-tablet.jpg" alt="My portrait">
+            <img
+            srcset="../assets/dummy-portrait-phone.jpg 250w, ../assets/dummy-portrait-desktop.jpg 500w",
+            sizes="(max-width: 416px) 60vw, 500px" 
+            src="../assets/dummy-portrait-desktop.jpg" alt="My portrait">
             <div class="about">
                 <h1>About me</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
