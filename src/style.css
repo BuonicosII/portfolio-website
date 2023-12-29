@@ -124,6 +124,38 @@ header {
 	height: auto;
 }
 
+main {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding-top: 5vw;
+}
+
+.projectList {
+	max-width: 50vw;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	gap: 5vw;
+	padding-top: 5vw;
+}
+
+section {
+	max-width: 40%;
+	box-shadow: 5px 5px 10px grey;
+}
+
+section img {
+	width: 100%;
+}
+
+section div {
+	padding: 3vw;
+}
+
 @media (max-width: 1150px) {
 
 	.aboutDiv {
@@ -139,14 +171,19 @@ header {
 	.aboutDiv img {
 		width: 75%;
 	}
+
+	section {
+		max-width: 100%;
+	}
 }
 
 @media (max-width: 650px) {
+
 	.aboutDiv {
 		flex-wrap: wrap;
 		max-height: none;
 		top: 5vh;
-		max-width: 60vw;
+		max-width: 75vw;
 	}
 
 	.about {
@@ -155,5 +192,9 @@ header {
 
 	.aboutDiv img {
 		width: 100%;
+	}
+
+	.projectList {
+		max-width: 75vw;
 	}
 }
