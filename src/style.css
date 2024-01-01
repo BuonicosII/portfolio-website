@@ -66,7 +66,13 @@ nav {
 	align-items: center;
 }
 
-nav div {
+.navSticky {
+	position: sticky;
+	top: 0;
+	z-index: 1
+}
+
+.desktopMenu {
 	display: flex;
 	width: 50%;
 	height: 100%; 
@@ -74,6 +80,42 @@ nav div {
 	align-items: center;
 	color: white;
 	font-size: 2vh;
+}
+
+.mobileMenu {
+	display: flex;
+	position: relative;
+	background-color: rgb(121, 121, 245);
+	color: white;
+	width: 100%;
+	height: 100%;
+	justify-content: end;
+	align-items: center;
+}
+
+.dropDownDiv {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	position: absolute;
+	top: 10vh;
+	border: solid 0.5px white;
+}
+
+.invisible {
+	display: none;
+}
+
+.holderDiv {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	padding: 3vh;
+	background-color: rgb(121, 121, 245);
+	border: solid 0.5px white;
+	color: white;
+
 }
 
 header {
