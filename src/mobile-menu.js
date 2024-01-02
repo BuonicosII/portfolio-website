@@ -5,8 +5,8 @@ function dropDownOn () {
         mobileMenu.removeChild(mobileMenu.firstChild)
     }
 
-    const closeButton = document.createElement("button");
-    closeButton.textContent = "X";
+    const closeButton = document.createElement("div");
+    closeButton.classList.add("closeBtn")
     closeButton.addEventListener("click", dropDownOff);
     mobileMenu.appendChild(closeButton);
 
@@ -21,8 +21,8 @@ function dropDownOff () {
         mobileMenu.removeChild(mobileMenu.firstChild)
     }
 
-    const openButton = document.createElement("button");
-    openButton.textContent = "ON";
+    const openButton = document.createElement("div");
+    openButton.classList.add("openBtn")
     openButton.addEventListener("click", dropDownOn);
     mobileMenu.appendChild(openButton);
 
@@ -43,8 +43,8 @@ function createMobileMenu () {
     mobileMenu.classList.add("mobileMenu");
     nav.appendChild(mobileMenu);
 
-    const openButton = document.createElement("button");
-    openButton.textContent = "ON";
+    const openButton = document.createElement("div");
+    openButton.classList.add("openBtn")
     openButton.addEventListener("click", dropDownOn);
     mobileMenu.appendChild(openButton);
 

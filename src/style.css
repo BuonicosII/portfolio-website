@@ -93,13 +93,30 @@ nav {
 	align-items: center;
 }
 
+.openBtn {
+	background-image: url(../assets/menu.png);
+	background-size: cover;
+	height: 5vh;
+	width: 5vh;
+	margin-right: 3vh;
+}
+
+.closeBtn {
+	background-image: url(../assets/close.png);
+	background-size: cover;
+	height: 4vh;
+	width: 4vh;
+	margin-right: 3vh;
+}
+
 .dropDownDiv {
 	display: flex;
 	flex-wrap: wrap;
 	width: 100%;
 	position: absolute;
 	top: 10vh;
-	border: solid 0.5px white;
+	border-top: solid 0.5px white;
+	border-bottom: solid 0.5px white;
 }
 
 .invisible {
@@ -113,7 +130,8 @@ nav {
 	width: 100%;
 	padding: 3vh;
 	background-color: rgb(121, 121, 245);
-	border: solid 0.5px white;
+	border-top: solid 0.5px white;
+	border-bottom: solid 0.5px white;
 	color: white;
 
 }
