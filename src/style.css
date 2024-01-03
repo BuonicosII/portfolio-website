@@ -185,8 +185,9 @@ header {
 	align-items: center;
 	align-content: center;
 	justify-content: center;
-	max-width: 60vw;
+	max-width: 50vw;
 	max-height: 40vh;
+	min-width: 700px;
 	margin-top: 5vw;
 }
 
@@ -208,7 +209,7 @@ main {
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	padding-top: 5vh;
+	padding: 5vh;
 }
 
 .projectList {
@@ -220,6 +221,7 @@ main {
 	align-content: center;
 	gap: 5vh;
 	padding-top: 5vh;
+	min-width: 700px;
 }
 
 section {
@@ -231,15 +233,29 @@ section img {
 	width: 100%;
 }
 
-section div {
-	padding: 3vw;
+.description {
+	padding: 3vh;
+}
+
+.iconHolder {
+	display: flex;
+	justify-content: end;
+	align-items: center;
+	gap: 1.2vh;
+	width: 100%;
+	margin-top: 3vh;
+}
+
+.iconHolder img {
+	height: 3vh;
 }
 
 @media (max-width: 1000px) {
 
 	.aboutDiv {
 		flex-wrap: wrap;
-		max-height: none;
+		max-height: unset;
+		min-width: 0;
 		top: 5vh;
 	}
 
@@ -250,11 +266,15 @@ section div {
 	.aboutDiv img {
 		width: 75%;
 		height: auto;
-		max-width: none;
+		max-width: unset;
 	}
 
 	section {
 		max-width: 100%;
+	}
+
+	.projectList {
+		min-width: unset;
 	}
 }
 
@@ -262,7 +282,8 @@ section div {
 
 	.aboutDiv {
 		flex-wrap: wrap;
-		max-height: none;
+		max-height: unset;
+		min-width: unset;
 		top: 5vh;
 		max-width: 75vw;
 	}
@@ -277,5 +298,6 @@ section div {
 
 	.projectList {
 		max-width: 75vw;
+		min-width: unset;
 	}
 }

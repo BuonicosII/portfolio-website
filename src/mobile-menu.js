@@ -37,7 +37,7 @@ function createMobileMenu () {
         nav.removeChild(nav.firstChild)
     }
 
-    nav.classList.toggle("navSticky")
+    nav.classList.add("navSticky")
     
     const mobileMenu = document.createElement("div");
     mobileMenu.classList.add("mobileMenu");

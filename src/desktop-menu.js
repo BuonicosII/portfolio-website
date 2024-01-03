@@ -4,6 +4,10 @@ function createDesktopMenu () {
     while (nav.hasChildNodes()) {
         nav.removeChild(nav.firstChild)
     }
+
+    if (nav.classList.contains("navSticky")) {
+        nav.classList.remove("navSticky")
+    }
     
     const desktopMenu = document.createElement("div");
     desktopMenu.classList.add("desktopMenu");
