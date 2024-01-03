@@ -58,6 +58,25 @@ html {
 	font-family: "MyFont";
 }
 
+h1 {
+	font-size: 3.5vh;
+	line-height: 1.5;
+}
+
+h2 {
+	font-size: 3vh;
+	line-height: 1.5;
+}
+
+h3 {
+	font-size: 2vh;
+	line-height: 1.5;
+}
+
+p {
+	line-height: 1.5;
+}
+
 nav {
 	height: 10vh;
 	background-color: rgb(121, 121, 245);
@@ -166,22 +185,22 @@ header {
 	align-items: center;
 	align-content: center;
 	justify-content: center;
-	max-width: 50vw;
-	max-height: 35vw;
-	padding-top: 5vw;
+	max-width: 60vw;
+	max-height: 40vh;
+	margin-top: 5vw;
 }
 
 .about {
 	background-color: white;
-	padding: 5vh;
+	padding: 3vh;
 	box-shadow: 5px 5px 10px grey;
-	width: 60%;
 	box-sizing: border-box;
+	width: 60%;
 }
 
 .aboutDiv img {
 	width: 40%;
-	height: auto;
+	max-width: 350px;
 }
 
 main {
@@ -189,7 +208,7 @@ main {
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	padding-top: 5vw;
+	padding-top: 5vh;
 }
 
 .projectList {
@@ -199,8 +218,8 @@ main {
 	justify-content: center;
 	align-items: center;
 	align-content: center;
-	gap: 5vw;
-	padding-top: 5vw;
+	gap: 5vh;
+	padding-top: 5vh;
 }
 
 section {
@@ -216,7 +235,7 @@ section div {
 	padding: 3vw;
 }
 
-@media (max-width: 1150px) {
+@media (max-width: 1000px) {
 
 	.aboutDiv {
 		flex-wrap: wrap;
@@ -230,6 +249,8 @@ section div {
 
 	.aboutDiv img {
 		width: 75%;
+		height: auto;
+		max-width: none;
 	}
 
 	section {
