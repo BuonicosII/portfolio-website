@@ -247,7 +247,49 @@ section img {
 }
 
 .iconHolder img {
-	height: 3vh;
+	height: 2vh;
+}
+
+footer {
+	background-color: rgb(121, 121, 245);
+	display: flex;
+	justify-content: center;
+	color: white;
+}
+
+.footerInfo {
+	display: flex;
+	align-items: start;
+	align-content: start;
+	justify-content: center;
+	max-width: 50vw;
+	max-height: 40vh;
+	min-width: 700px;
+	padding-bottom: 5vw;
+	padding-top: 5vw;
+	gap: 5vh;
+}
+
+.footerInfo img {
+	width: 50%;
+	max-width: 400px;
+}
+
+.contactInfo {
+	display: flex;
+	flex-direction: column;
+	gap: 2vh;
+}
+
+.contactInfo div {
+	display: flex;
+	align-items: center;
+	gap: 1vh;
+}
+
+.contactInfo img {
+	max-height: 2vh;
+	width: auto;
 }
 
 @media (max-width: 1000px) {
@@ -276,6 +318,26 @@ section img {
 	.projectList {
 		min-width: unset;
 	}
+
+	.footerInfo {
+		flex-wrap: wrap;
+		max-height: unset;
+		min-width: unset;
+	}
+
+	.contactInfo {
+		width: 75%;
+	}
+
+	.footerInfo img {
+		width: 75%;
+		height: auto;
+		max-width: unset;
+	}
+
+	.contactInfo img {
+		width: auto;
+	}
 }
 
 @media (max-width: 650px) {
@@ -299,5 +361,24 @@ section img {
 	.projectList {
 		max-width: 75vw;
 		min-width: unset;
+	}
+
+	.footerInfo {
+		flex-wrap: wrap;
+		max-height: unset;
+		min-width: unset;
+		max-width: 75vw;
+	}
+
+	.contactInfo {
+		width: 100%;
+	}
+
+	.footerInfo img {
+		width: 100%;
+	}
+
+	.contactInfo img {
+		width: auto;
 	}
 }
