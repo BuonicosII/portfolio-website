@@ -137,14 +137,16 @@ nav {
 	display: flex;
 	flex-wrap: wrap;
 	width: 100%;
+	height: calc(50px + 18vh);
 	position: absolute;
 	top: 10vh;
-	border-top: solid 0.5px white;
 	border-bottom: solid 0.5px white;
+	overflow: hidden;
+	transition: height 0.75s ease-in-out;
 }
 
 .invisible {
-	display: none;
+	height: 0px;
 }
 
 .holderDiv {
@@ -155,7 +157,6 @@ nav {
 	padding: 3vh;
 	background-color: rgb(121, 121, 245);
 	border-top: solid 0.5px white;
-	border-bottom: solid 0.5px white;
 	color: white;
 
 }
