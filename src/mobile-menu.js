@@ -64,12 +64,15 @@ function createMobileMenu () {
         switch (i) {
             case 1: 
                 link.textContent = "About";
+                link.setAttribute("href", "#aboutMe")
                 break;
             case 2: 
                 link.textContent = "Projects";
+                link.setAttribute("href", "#myWork")
                 break;
             case 3:
                 link.textContent = "Contact Me";
+                link.setAttribute("href", "#contactMe")
                 break;
         }
 

@@ -15,14 +15,17 @@ function createDesktopMenu () {
 
     const aboutLink = document.createElement("a");
     aboutLink.textContent = "About";
+    aboutLink.setAttribute("href", "#aboutMe")
     desktopMenu.appendChild(aboutLink);
 
     const projectsLink = document.createElement("a");
     projectsLink.textContent = "Projects";
+    projectsLink.setAttribute("href", "#myWork")
     desktopMenu.appendChild(projectsLink);
 
     const contactLink = document.createElement("a");
     contactLink.textContent = "Contact Me";
+    contactLink.setAttribute("href", "#contactMe")
     desktopMenu.appendChild(contactLink);
 }
 

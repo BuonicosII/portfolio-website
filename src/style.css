@@ -58,6 +58,11 @@ html {
 	font-family: "MyFont";
 }
 
+a:visited, a:link, a:active {
+	color: white;
+	text-decoration: none;
+}
+
 h1 {
 	font-size: 3.5vh;
 	line-height: 1.5;
@@ -382,3 +387,5 @@ footer {
 		width: auto;
 	}
 }
+
+:target { scroll-margin-top: 180px; }
